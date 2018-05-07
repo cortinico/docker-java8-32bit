@@ -19,7 +19,7 @@ And then run the Jar inside the container
 docker run -i -v /tmp/jar:/data cortinico/java8-32bit java -jar myapp.jar
 ```
 
-## Run LongAtomTest example 
+## How to run a sample Java File
 
 ```sh
 vi LongAtomTest.java
@@ -27,6 +27,8 @@ javac LongAtomTest.java
 ```
 
 `docker run -it --rm -v /opt/java:/opt/java -w /opt/java cortinico/java8-32bit java LongAtomTest`
+
+Let's try to run a sample .java file inside the docker container. You can use a sample java file, LongAtomTest.java, pasted below.
 
 ```java
 // from http://www.cnblogs.com/louiswong/p/5951895.html
